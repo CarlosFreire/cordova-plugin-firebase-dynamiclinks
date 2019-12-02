@@ -100,6 +100,20 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <header-file src="src/ios/FirebaseDynamicLinksPlugin.h" />
         <source-file src="src/ios/FirebaseDynamicLinksPlugin.m" />
 
+               
+        <!--El tag podespec no esta funcionando en mac por lo tanto se agrega los pod directamente-->
+        <pod name="Firebase/Analytics" spec="~> 6.3.0" />
+        <pod name="Firebase/DynamicLinks" spec="~> 6.3.0" />
+           <!--Pod spec de firebaseX 6.1.0-->
+           <pod name="Firebase/Core" spec="6.11.0"/>
+           <pod name="Firebase/Auth" spec="6.11.0"/>
+           <pod name="Firebase/Messaging" spec="6.11.0"/>
+           <pod name="Firebase/Performance" spec="6.11.0"/>
+           <pod name="Firebase/RemoteConfig" spec="6.11.0"/>
+           <pod name="Fabric" spec="1.10.2"/>
+           <pod name="Crashlytics" spec="3.14.0"/>
+        <!--Fin-->
+               
         <podspec>
             <config>
                 <source url="https://github.com/CocoaPods/Specs.git/"/>
